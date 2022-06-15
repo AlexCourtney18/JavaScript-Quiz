@@ -49,7 +49,6 @@ var startQuiz = function (event) {
     button4.innerHTML = "Fourth Answer";
     li4.appendChild(button4);
     questionEl.appendChild(li4);
-
 }
 
 //question 2
@@ -170,9 +169,6 @@ var answer4 = function (event) {
     var submit = document.createElement("button");
     submit.innerHTML = "Submit";
     submitEl.appendChild(submit);
-
-
-
 }
 
 
