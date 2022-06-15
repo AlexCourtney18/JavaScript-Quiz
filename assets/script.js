@@ -12,6 +12,7 @@ var questionEl = document.querySelector("#question");
 var question2El = document.querySelector("#question2");
 var question3El = document.querySelector("#question3");
 var question4El = document.querySelector("#question4");
+var points = 0;
 
 
 
@@ -21,33 +22,33 @@ var startQuiz = function (event) {
     startingPageEl.setAttribute("style", "display: none;");
     console.log("hello");
 
-var question = document.createElement("h2");
-question.innerHTML = "Question One";
-questionEl.appendChild(question);
+    var question = document.createElement("h2");
+    question.innerHTML = "Question One";
+    questionEl.appendChild(question);
 
-var li1 = document.createElement("li");
-var button1 = document.createElement("button");
-button1.innerHTML = "First Answer";
-li1.appendChild(button1);
-questionEl.appendChild(li1);
+    var li1 = document.createElement("li");
+    var button1 = document.createElement("button");
+    button1.innerHTML = "First Answer";
+    li1.appendChild(button1);
+    questionEl.appendChild(li1);
 
-var li2 = document.createElement("li");
-var button2 = document.createElement("button");
-button2.innerHTML = "Second Answer";
-li2.appendChild(button2);
-questionEl.appendChild(li2);
+    var li2 = document.createElement("li");
+    var button2 = document.createElement("button");
+    button2.innerHTML = "Second Answer";
+    li2.appendChild(button2);
+    questionEl.appendChild(li2);
 
-var li3 = document.createElement("li");
-var button3 = document.createElement("button");
-button3.innerHTML = "Third Answer";
-li3.appendChild(button3);
-questionEl.appendChild(li3);
+    var li3 = document.createElement("li");
+    var button3 = document.createElement("button");
+    button3.innerHTML = "Third Answer";
+    li3.appendChild(button3);
+    questionEl.appendChild(li3);
 
-var li4 = document.createElement("li");
-var button4 = document.createElement("button");
-button4.innerHTML = "Fourth Answer";
-li4.appendChild(button4);
-questionEl.appendChild(li4);
+    var li4 = document.createElement("li");
+    var button4 = document.createElement("button");
+    button4.innerHTML = "Fourth Answer";
+    li4.appendChild(button4);
+    questionEl.appendChild(li4);
 
 }
 
@@ -58,25 +59,25 @@ var answer1 = function (event) {
     var question = document.createElement("h2");
     question.innerHTML = "Question Two";
     question2El.appendChild(question);
-    
+
     var li1 = document.createElement("li");
     var button1 = document.createElement("button");
     button1.innerHTML = "First Answer";
     li1.appendChild(button1);
     question2El.appendChild(li1);
-    
+
     var li2 = document.createElement("li");
     var button2 = document.createElement("button");
     button2.innerHTML = "Second Answer";
     li2.appendChild(button2);
     question2El.appendChild(li2);
-    
+
     var li3 = document.createElement("li");
     var button3 = document.createElement("button");
     button3.innerHTML = "Third Answer";
     li3.appendChild(button3);
     question2El.appendChild(li3);
-    
+
     var li4 = document.createElement("li");
     var button4 = document.createElement("button");
     button4.innerHTML = "Fourth Answer";
@@ -91,25 +92,25 @@ var answer2 = function (event) {
     var question = document.createElement("h2");
     question.innerHTML = "Question Three";
     question3El.appendChild(question);
-    
+
     var li1 = document.createElement("li");
     var button1 = document.createElement("button");
     button1.innerHTML = "First Answer";
     li1.appendChild(button1);
     question3El.appendChild(li1);
-    
+
     var li2 = document.createElement("li");
     var button2 = document.createElement("button");
     button2.innerHTML = "Second Answer";
     li2.appendChild(button2);
     question3El.appendChild(li2);
-    
+
     var li3 = document.createElement("li");
     var button3 = document.createElement("button");
     button3.innerHTML = "Third Answer";
     li3.appendChild(button3);
     question3El.appendChild(li3);
-    
+
     var li4 = document.createElement("li");
     var button4 = document.createElement("button");
     button4.innerHTML = "Fourth Answer";
@@ -124,25 +125,25 @@ var answer3 = function (event) {
     var question = document.createElement("h2");
     question.innerHTML = "Question Four";
     question4El.appendChild(question);
-    
+
     var li1 = document.createElement("li");
     var button1 = document.createElement("button");
     button1.innerHTML = "First Answer";
     li1.appendChild(button1);
     question4El.appendChild(li1);
-    
+
     var li2 = document.createElement("li");
     var button2 = document.createElement("button");
     button2.innerHTML = "Second Answer";
     li2.appendChild(button2);
     question4El.appendChild(li2);
-    
+
     var li3 = document.createElement("li");
     var button3 = document.createElement("button");
     button3.innerHTML = "Third Answer";
     li3.appendChild(button3);
     question4El.appendChild(li3);
-    
+
     var li4 = document.createElement("li");
     var button4 = document.createElement("button");
     button4.innerHTML = "Fourth Answer";
@@ -169,7 +170,7 @@ var answer4 = function (event) {
     var submit = document.createElement("button");
     submit.innerHTML = "Submit";
     submitEl.appendChild(submit);
-    
+
 
 
 }
