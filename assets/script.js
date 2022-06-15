@@ -5,11 +5,14 @@ var page3El = document.querySelector("#page3");
 var page4El = document.querySelector("#page4");
 var endingEl = document.querySelector("#ending-page");
 var doneEl = document.querySelector("#done");
+var scoreEl = document.querySelector("#score");
+var formEl = document.querySelector("#form");
+var submitEl = document.querySelector("#submit");
 var questionEl = document.querySelector("#question");
 var question2El = document.querySelector("#question2");
 var question3El = document.querySelector("#question3");
 var question4El = document.querySelector("#question4");
-var scoreEl = document.querySelector("#score");
+
 
 
 
@@ -152,15 +155,20 @@ var answer4 = function (event) {
     page4El.setAttribute("style", "display: none;");
 
     var done = document.createElement("h1");
-    done.innerHTML = "All done!"
+    done.innerHTML = "All done!";
     doneEl.appendChild(done);
 
     var score = document.createElement("h2");
-    score.innerHTML = "Your final score is XX"
+    score.innerHTML = "Your final score is XX";
     scoreEl.appendChild(score);
 
-    
+    var form = document.createElement("form");
+    form.innerHTML = "Enter Initials:";
+    formEl.append(form);
 
+    var submit = document.createElement("button");
+    submit.innerHTML = "Submit";
+    submitEl.appendChild(submit);
     
 
 
